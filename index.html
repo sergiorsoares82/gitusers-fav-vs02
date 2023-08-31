@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GitHub Favorites VS-02</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/js/main.js" defer type="module"></script>
   </head>
   <body>
-    <h1>GitHub Favorites</h1>
+    <div id="app">
+      <header>
+        <div class="logo">
+          <img src="./assets/Gitfav.svg" alt="" />
+        </div>
+        <div class="search">
+          <label for="search-input" class="sr-only"
+            >Digite o Github username que você quer favoritar</label
+          >
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Digite o Github username que você quer favoritar"
+            name="search"
+          />
+          <button type="button">
+            <img src="./assets/star.svg" alt="" />
+            Favoritar
+          </button>
+        </div>
+      </header>
+      <table>
+        <thead>
+          <tr>
+            <th>Usuário</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="user">
+              <img src="./assets/Ellipse 3.svg" alt="" />
+              <a href="#">
+                <p>Mayk Brito</p>
+                <span>/maykbrito</span>
+              </a>
+            </td>
+            <td class="followers">123</td>
+            <td class="repositories">1234</td>
+            <td class="remove">Remover</td>
+          </tr>
+          <tr>
+            <td class="user">
+              <img src="./assets/Ellipse 3.svg" alt="" />
+              <a href="#">
+                <p>Mayk Brito</p>
+                <span>/maykbrito</span>
+              </a>
+            </td>
+            <td class="followers">123</td>
+            <td class="repositories">1234</td>
+            <td class="remove">Remover</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
